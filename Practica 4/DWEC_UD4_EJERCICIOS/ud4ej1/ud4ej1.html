@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>UD 4 - Ejercicio 1</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <div class="row">
+            <div class="accordion">
+                <div class="accordion-item" onclick="muestraOculta(this)">
+                    <a id="enlace_1" href="#contenido_1">
+                        <span class="title">Título contenido 1</span> 
+                        <span class="toggle-content"><img class="icon" src="img/close.png"></span>
+                    </a>
+                    <p id="contenido_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, 
+                        commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, 
+                        luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, 
+                        pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, 
+                        semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing 
+                        ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor.</p>
+                </div>
+                <div class="accordion-item" onclick="muestraOculta(this)">
+                    <a id="enlace_2" href="#contenido_2">
+                        <span class="title">Título contenido 2</span> 
+                        <span class="toggle-content"><img class="icon" src="img/close.png"></span>
+                    </a>
+                    <p id="contenido_2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, 
+                        commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, 
+                        luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, 
+                        pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, 
+                        semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing 
+                        ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor.</p>
+                </div>
+                <div class="accordion-item" onclick="muestraOculta(this)">
+                    <a id="enlace_3" href="#contenido_3">
+                        <span class="title">Título contenido 3</span>
+                        <span class="toggle-content"><img class="icon" src="img/close.png"></span>
+                    </a>
+                    <p id="contenido_3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, 
+                        commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, 
+                        luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, 
+                        pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, 
+                        semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing 
+                        ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor.</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+   
+
+            function muestraOculta(pThisAccordionItem)
+            {
+                let icon = document.querySelector('.icon');
+                let contenido = document.querySelector("#contenido_1");
+                
+                $( "#mostrar-super-contenido" ).click( function() {
+                $( "#mi-super-contenido" ).toggle();
+                });
+                    
+                
+                /*pThisAccordionItem.onclick = preventDefault();*/
+                
+                /*contenido.style.display = "block";
+                icon.style.content = "url(img/close.png)";
+                console.log("if");*/
+                
+
+              /* if (pThisAccordionItem.innerHTML.includes("1"))
+                {
+                    a = !a;
+                    if (a)
+                    {
+                        //cierra
+                        contenido_1.style.display = "none";
+                        icon1.style.content = "url(img/open.png)";
+                    } 
+                    else
+                    {
+                        //abre
+                        contenido_1.style.display = "block";
+                        icon1.style.content = "url(img/close.png)";
+                    }
+                }
+
+                if (pThisAccordionItem.innerHTML.includes("2"))
+                {
+                    b = !b;
+                    if (b)
+                    {
+                        //cierra
+                        contenido_2.style.display = "none";
+                        icon2.style.content = "url(img/open.png)";
+                    } 
+                    else
+                    {
+                        //abre
+                        contenido_2.style.display = "block";
+                        icon2.style.content = "url(img/close.png)";
+                    }
+                }
+
+                if (pThisAccordionItem.innerHTML.includes("3"))
+                {
+                    c = !c;
+                    if (c)
+                    {
+                        //cierra
+                        contenido_3.style.display = "none";
+                        icon3.style.content = "url(img/open.png)";
+                    }
+                    else
+                    {
+                        //abre
+                        contenido_3.style.display = "block";
+                        icon3.style.content = "url(img/close.png)";
+                    }
+                } */
+            }
+            
+        </script>
+
+    </body>
+</html>

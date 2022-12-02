@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>UD 4 - Ejercicio 4</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+
+  let comunidades = {
+    castilla_la_mancha : [ 
+      { clave : 'guadalajara', texto : 'Guadalajara' }, 
+      { clave : 'cuenca', texto : 'Cuenca' }, 
+      { clave : 'albacete', texto : 'Albacete' }, 
+      { clave : 'ciudad_real', texto : 'Ciudad Real' }, 
+      { clave : 'toledo', texto : 'Toledo'}
+    ],	
+    comunidad_valenciana : [ 
+      { clave : 'castellon', texto : 'Castellón' }, 
+      { clave : 'valencia', texto : 'Valencia' }, 
+      { clave : 'alicante', texto : 'Alicante' } 
+    ],
+    comunidad_madrid : [ 
+      { clave : 'madrid', texto: 'Madrid'}
+    ]
+  };
+
+  // Función validarNombre()
+
+
+  // Función mostrarPovincias()
+
+	
+  // Función mostrarFoto() 
+	
+	
+  // Función validarDatos() 
+
+	
+  // Función mostrarDatos()
+
+
+  // Función validarFormulario() 
+
+
+  // Función main() 
+
+
+  // Tras cargarse la página, llamar a main() 
+
+  
+  </script>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col1">
+      <h2>FORMULARIO</h2>
+      <form id="formulario" method="post" action="script.php" enctype="multipart/form-data">
+        <label for="txtNombre">
+          <span class="label">Nombre*:</span>
+          <input type="text" id="txtNombre" name="txtNombre" value="" placeholder="Nombre*">
+          <span id="errorNombre"></span>
+        </label>
+        <label for="txtApellidos">
+          <span class="label">Apellidos: </span>
+          <input type="text" id="txtApellidos" name="txtApellidos" value="" placeholder="Apellidos">
+        </label>
+        <label for="txtEmail">
+          <span class="label">E-mail: </span>
+          <input type="email" id="txtEmail" name="txtEmail" placeholder="E-mail" required>
+        </label>
+        <label for="txtEdad">
+          <span class="label">Edad: </span>
+          <input type="number" id="txtEdad" name="txtEdad" value="18" min="18" max="90" step="1" placeholder="Edad" required>
+        </label>
+        <label for="radHombre">
+          <span class="label">Sexo: </span>
+          <input type="radio" id="radHombre" name="radSexo" value="Hombre" checked> <span class="txtRadio">Hombre</span>
+          <input type="radio" id="radMujer" name="radSexo" value="Mujer"> <span class="txtRadio">Mujer</span>
+        </label>
+        <label for="fileFoto">
+          <span class="label">Incluir mi foto: </span>
+          <input type="file" id="fileFoto" name="fileFoto" accept="image/*">
+        </label>
+        <img id="imgFoto" src="" alt=""><br>		
+        <label for="chkPublicidad">
+          <span class="label">Enviar publicidad: </span>
+          <input type="checkbox" id="chkPublicidad" name="chkPublicidad" value="publicidad">
+        </label>
+        <label for="lstComunidades">
+          <span class="label">Comunidad autónoma*: </span>		
+          <select id="lstComunidades" name="lstComunidades">
+            <option value="0" checked>-- Seleccionar --</option>
+            <option value="castilla_la_mancha">Castilla - La Mancha</option>				
+            <option value="comunidad_valenciana">Comunidad valenciana</option>
+            <option value="comunidad_madrid">Madrid</option>
+          </select>
+        </label>
+        <label for="lstProvincias">
+          <span class="label">Provincia: </span>		
+          <select id="lstProvincias" name="lstProvincias"></select>
+        </label>		
+        <label for="areaObservaciones">
+          <span class="label">Observaciones: </span>
+          <textarea id="areaObservaciones" name="areaObservaciones"></textarea>
+        </label>
+        <div class="acciones">
+          <input type="submit" id="btnEnviar" name="btnEnviar" class="btn-accion" value="Enviar datos">
+          <input type="button" id="btnVerDatos" name="btnVerDatos" class="btn-accion" value="Ver datos">		
+          <input type="reset" id="btnBorrar" name="btnBorrar" class="btn-accion" value="Borrar datos">	
+        </div>
+      </form>
+    </div>
+    <div class="col2">
+      <h2>RESUMEN DE DATOS</h2>
+      <div id="datos"></div>
+    </div>
+	<!-- EJEMPLO DE CONTENIDO GENERADO EN EL <div id="DATOS">
+	<p>Nombre: Ana</p>
+	<p>Apellidos: </p>
+	<p>E-mail: email@email.com</p>
+	<p>Edad: 18</p>
+	<p>Sexo: Mujer</p>
+	<p>Foto cargada</p> o <p>No se cargó foto</p>
+	<p>No recibirá publicidad</p> o <p>Recibirá publicidad</p>
+	<p>Comunidad autónoma: Castilla - La Mancha</p>
+	<p>Provincia: Toledo</p>
+	<p>Observaciones: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, 
+	metus quis rutrum malesuada, lectus dolor consequat est, sed sollicitudin est mi ut nibh.</p>	
+	-->
+  </div>
+</div>
+</body>
+</html>

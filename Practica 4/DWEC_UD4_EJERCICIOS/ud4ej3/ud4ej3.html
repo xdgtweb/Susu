@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>UD 4 - Ejercicio 3</title>
+  <!-- Font Awesome 4.7 --> 
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">  
+  <link rel="stylesheet" href="styles.css">
+  <script>
+
+  let productos = [
+    {
+      id : 1,
+      name : "Producto 1",
+      price : 100,
+      image : "product-1.jpg",
+      qty: 0
+    }, 
+    {
+      id : 2,  
+      name : "Producto 2",
+      price : 200,
+      image : "product-2.jpg",
+      qty : 0		
+    },  
+    {
+      id : 3,  
+      name : "Producto 3",
+      price : 300,
+      image : "product-3.jpg",
+      qty : 0
+    }
+  ];
+  
+  
+  // Función agregarProductoACesta()
+
+
+  // Función main()
+
+
+  // Tras cargarse la página, llamar a main()
+
+  
+  </script>
+</head>
+<body>
+<!-- EJEMPLO DE PRODUCTO DE LA CESTA
+<div class="cart-product" data-id-product="0">
+  <div class="cart-product-image">
+    <a href="#"><img src="img/product-1.jpg" alt="..."></a>
+  </div>
+  <div class="cart-product-data">
+    <h6 class="cart-product-name">Producto 1</h6>
+    <p>Precio: <span class="cart-product-price">100</span></p>
+    <div class="counter" data-product-id="0">
+      <button class="btnTotal btnDec">-</button>
+      <button class="btnQty">1</button>
+      <button class="btnTotal btnInc">+</button>
+    </div>
+    <p>x <span class="cart-product-plus">1</span> : <span class="cart-product-total">100</span> €</p>					
+  </div>			
+</div> -->
+<section id="content">
+  <div class="row">
+    <div class="content-wrapper">
+  
+	  <div class="cart">
+	    <div class="cart-title">
+		  <h3>Tu cesta</h3>
+	    </div>
+	    <div class="cart-items">
+
+	    </div>
+	    <div class="cart-total">
+		  <h4>TOTAL = <span class="cart-total-price">0</span> €</h4>
+	    </div>	
+	    <div class="cart-payment">
+		  <a href="#"><span>Ir a pagar</span></a>
+	    </div>
+	  </div><!-- ./cart -->
+	
+	  <div class="products-wrapper">
+
+	    <!-- product-item start -->
+	    <div class="product-item">
+		  <div class="product-img">
+		    <a href="#"><img src="img/product-1.jpg" alt=""></a>
+		  </div>
+		  <h6 class="product-title"><a href="#">Producto 1</a></h6>
+		  <div class="product-info">
+		    <h3 class="pro-price">100 €</h3>
+		    <ul class="action-buttons">
+			  <li><a href="#" title="Wishlist"><i class="fa fa-heart"></i></a></li>
+			  <li><a href="#" title="Quickview"><i class="fa fa-search-plus"></i></a></li>
+			  <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+			  <li><a href="#" id="1" class="addToCart" title="Add to cart"><i class="fa fa-cart-plus"></i></a></li>
+		    </ul>
+		  </div>
+	    </div>
+	    <!-- product-item start -->
+	    <div class="product-item">
+		  <div class="product-img">
+		    <a href="#"><img src="img/product-2.jpg" alt=""></a>
+		  </div>
+		  <h6 class="product-title"><a href="#">Producto 2</a></h6>
+		  <div class="product-info">     
+		    <h3 class="pro-price">200 €</h3>
+		    <ul class="action-buttons">
+			  <li><a href="#" title="Wishlist"><i class="fa fa-heart"></i></a></li>
+			  <li><a href="#" title="Quickview"><i class="fa fa-search-plus"></i></a></li>
+			  <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+			  <li><a href="#" id="2" class="addToCart" title="Add to cart"><i class="fa fa-cart-plus"></i></a></li>
+		    </ul>
+		  </div>
+	    </div>
+	    <!-- product-item start -->            
+	    <div class="product-item">
+		  <div class="product-img">
+		    <a href="#"><img src="img/product-3.jpg" alt=""></a>
+		  </div>
+		  <h6 class="product-title"><a href="#">Producto 3</a></h6>
+		  <div class="product-info">
+		    <h3 class="pro-price">300 €</h3>
+		    <ul class="action-buttons">
+			  <li><a href="#" title="Wishlist"><i class="fa fa-heart"></i></a></li>
+			  <li><a href="#" title="Quickview"><i class="fa fa-search-plus"></i></a></li>
+			  <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+			  <li><a href="#" id="3" class="addToCart" title="Add to cart"><i class="fa fa-cart-plus"></i></a></li>
+		    </ul>
+		  </div>
+	    </div>
+	  </div><!-- ./products-wrapper -->
+	
+    </div><!-- ./content-wrapper -->
+  </div><!-- ./row -->
+</section>
+</body>
+</html>  

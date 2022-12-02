@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.row {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  padding: 15px;
+  text-align: center;
+}
+#parte_lateral {
+  float: left;
+  width: 330px;
+  min-height: 517px;
+  padding: 10px;
+  background-color: #c7c7c7;
+}
+#parte_lateral img {
+  width: 150px;
+  height: 100px;
+  padding: 5px;
+}
+#parte_central {
+  padding-top: 15px;
+  background-color: #e7e7e7;
+}
+figure {
+  display: block;
+  min-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+figcaption {
+  padding: 15px;
+}

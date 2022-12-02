@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+.row {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {	
+  display: block;
+  padding: 10px;
+  background-color: #eee;
+  color: #111;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.accordion-item {
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 18px;
+  font-weight: bold;  
+}
+.toggle-content {
+  float: left;
+  margin-right: 10px;	
+  padding: 0 5px;
+}
+img.icon {
+  width: 20px;
+  
+}
+p {
+    padding: 15px 5px;
+}
